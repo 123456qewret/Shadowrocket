@@ -7,42 +7,42 @@ dns-server = system
 ipv6 = false
 
 [Proxy Group]
-🇭🇰 香港 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=^(?!.*?(游戏|实验)).*香港
-🇸🇬 新加坡 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=新加坡|狮城
-🇹🇼 台湾 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=台湾
-🇯🇵 日本 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=^(?!.*?(游戏|实验)).*日本
-🇺🇲 美国 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=美国
-📺 BILIBILI = select,select=0,DIRECT, 🇭🇰 香港, 🇹🇼 台湾, 🌍 其他地区
-📺 YOUTUBE = select,select=0,🇭🇰 香港, 🇯🇵 日本, 🇺🇲 美国, 🇸🇬 新加坡, 🇹🇼 台湾, 🔰 节点选择
-🎥 NETFLIX = select,select=0,🇭🇰 香港, 🇸🇬 新加坡, 🇯🇵 日本, 🇹🇼 台湾, 🌍 其他地区, 🔰 节点选择
-🎮 STAEM = select,select=0,DIRECT, 🇭🇰 香港, 🇺🇲 美国, 🛒 低价购物
-🎮 GAME = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=游戏
-🛒 低价购物 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=^(?!.*?(白俄罗斯)).*(阿根廷|土耳其|俄罗斯|菲律宾|巴西|购物).*
-🌍 其他地区 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=^(?!.*?(游戏|港|台湾|狮城|坡|日本|美国|阿根廷|土耳其|俄罗斯|菲律宾|巴西|购物)).*$|^.*白俄罗斯.*$
-📲 电报信息 = select,select=0,🇸🇬 新加坡, 🇭🇰 香港, 🇺🇲 美国, 🔰 节点选择
-🔰 节点选择 = select,select=0,🇭🇰 香港,🇸🇬 新加坡,🇹🇼 台湾,🇯🇵 日本,🇺🇲 美国,🛒 低价购物,🌍 其他地区,🎮 GAME
-🍎 苹果服务 = select,select=1,DIRECT,🇭🇰 香港,🇯🇵 日本,🇺🇲 美国,🇹🇼 台湾,🔰 节点选择
-🐟 漏网之鱼 = select,select=1,DIRECT,🔰 节点选择,🎮 STEAM,🎮 GAME
-
+🇭🇰香港 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=^(?!.*?(游戏|实验)).*香港
+🇸🇬新加坡 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=🇸🇬
+🇹🇼台湾 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=台湾
+🇯🇵日本 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=^(?!.*?(游戏|实验)).*日本
+🇺🇲美国 = select,select=0,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=美国
+📺BILIBILI = select,select=0,DIRECT,🇭🇰香港,🇹🇼台湾,🌍其他地区
+📺YOUTUBE = select,select=0,🇭🇰香港,🇯🇵日本,🇺🇲美国,🇸🇬新加坡,🇹🇼台湾,🔰节点选择
+🎥NETFLIX = select,select=0,🇭🇰香港,🇸🇬新加坡,🇯🇵日本,🇹🇼台湾,🌍其他地区,🔰节点选择
+🎮STAEM = select,select=1,DIRECT,🇭🇰香港,🇺🇲美国,🛒低价购物
+🎮GAME = select,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=游戏
+🛒低价购物 = select,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=^(?!.*?(白俄罗斯)).*(阿根廷|土耳其|俄罗斯|菲律宾|巴西|购物).*
+🌍其他地区 = select,interval=86400,tolerance=200,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=^(?!.*?(游戏|港|台湾|狮城|坡|日本|美国|阿根廷|土耳其|俄罗斯|菲律宾|巴西|购物)).*$|^.*白俄罗斯.*$
+📲电报信息 = select,select=0,🇸🇬新加坡,🇭🇰香港,🇺🇲美国,🔰节点选择
+🔰节点选择 = select,select=0,🇭🇰香港,🇸🇬新加坡,🇹🇼台湾,🇯🇵日本,🇺🇲美国,🛒低价购物,🌍其他地区,🎮GAME
+🍎苹果服务 = select,select=1,DIRECT,🇭🇰香港,🇯🇵日本,🇺🇲美国,🇹🇼台湾,🔰节点选择
+🐟漏网之鱼 = select,select=1,DIRECT,🔰节点选择,🎮STEAM,🎮GAME
 
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Advertising/Advertising.list,REJECT
 DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Advertising/Advertising_Domain.list,REJECT
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list,🇹🇼 台湾
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list,🇯🇵 日本
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Instagram/Instagram.list,🇯🇵 日本
-RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list,🎥 NETFLIX
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list,🎥 NETFLIX
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AmazonPrimeVideo/AmazonPrimeVideo.list,🎥 NETFLIX
-RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list,📺 YOUTUBE
-RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list,📺 BILIBILI
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SteamCN/SteamCN.list,🎮 STEAM
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list,🎮 STEAM
-RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list,🍎 苹果服务
-RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list,📲 电报信息
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global.list,🔰 节点选择
-DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_Domain.list,🔰 节点选择
-
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list,🇹🇼台湾
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list,🇯🇵日本
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Instagram/Instagram.list,🇯🇵日本
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list,🎥NETFLIX
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list,🎥NETFLIX
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AmazonPrimeVideo/AmazonPrimeVideo.list,🎥NETFLIX
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list,📺YOUTUBE
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list,📺BILIBILI
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SteamCN/SteamCN.list,🎮STEAM
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list,🎮STEAM
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list,🍎苹果服务
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list,📲电报信息
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global.list,🔰节点选择
+DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_Domain.list,🔰节点选择
+GEOIP,CN,DIRECT
+FINAL,🐟漏网之鱼
 GEOIP,CN,DIRECT
 FINAL,🐟 漏网之鱼
 
